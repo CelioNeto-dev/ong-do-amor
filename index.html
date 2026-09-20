@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Site da ONG do Amor - Conheça nossos projetos e faça seu cadastro. Validado pelo W3C.">
+
+    <title>ONG do Amor</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container header-container">
+
+            <h1>ONG do Amor</h1>
+
+            <!-- Botão do menu mobile -->
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav aria-label="Navegação principal">
+
+                <ul class="nav-menu">
+
+                    <li>
+                        <a href="#inicio">Início</a>
+                    </li>
+
+                    <li class="menu-dropdown">
+
+                        <a href="#projeto">O Projeto</a>
+
+                        <ul class="submenu">
+
+                            <li>
+                                <a href="#projeto">Nossas ações</a>
+                            </li>
+
+                            <li>
+                                <a href="#projeto">Educação</a>
+                            </li>
+
+                            <li>
+                                <a href="#projeto">Alimentação</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        <a href="#cadastro">Cadastro</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container">
+
+        <!-- ALERTA -->
+        <div
+            id="alertaBoasVindas"
+            class="alert alert-success">
+
+            Seja bem-vindo à ONG do Amor!
+
+        </div>
+
+
+        <!-- INÍCIO -->
+        <section id="inicio" class="section-inicio">
+
+            <h2>Espalhando Amor e Esperança</h2>
+
+            <p>
+                A ONG do Amor é uma organização dedicada a ajudar famílias
+                em situação de vulnerabilidade. A ONG realiza a distribuição
+                de alimentos e cestas básicas, além de promover atividades
+                educacionais para crianças e jovens, contribuindo para o
+                desenvolvimento, a inclusão e a melhoria da qualidade de vida
+                da comunidade.
+            </p>
+
+        </section>
+
+
+        <!-- PROJETO -->
+        <section id="projeto" class="section-projeto">
+
+            <h2>Sobre o Projeto</h2>
+
+            <p>
+                Confira algumas imagens das nossas ações recentes na
+                comunidade, todas otimizadas para garantir a melhor
+                performance e acessibilidade:
+            </p>
+
+            <div class="galeria">
+
+                <figure>
+
+                    <picture>
+
+                        <img
+                            src="media/distribuicao_de_alimentos.jpg"
+                            alt="Distribuição de alimentos e cestas básicas"
+                            width="400"
+                            height="300"
+                            loading="lazy">
+
+                    </picture>
+
+                    <figcaption>
+                        Distribuição de alimentos
+                    </figcaption>
+
+                </figure>
+
+
+                <figure>
+
+                    <picture>
+
+                        <img
+                            src="media/acao_educacional.jpg"
+                            alt="Atividades recreativas com crianças"
+                            width="400"
+                            height="300"
+                            loading="lazy">
+
+                    </picture>
+
+                    <figcaption>
+                        Apoio educacional infantil
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- CADASTRO -->
+        <section id="cadastro" class="section-cadastro">
+
+            <h2>Faça seu Cadastro</h2>
+
+            <p>
+                Junte-se a nós como voluntário ou parceiro.
+                Preencha o formulário abaixo e entraremos em contato:
+            </p>
+
+
+            <form
+                action="#"
+                method="POST"
+                class="form-cadastro">
+
+
+                <!-- NOME -->
+                <div class="form-group">
+
+                    <label for="nome">
+                        Nome Completo:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        required>
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="form-group">
+
+                    <label for="email">
+                        E-mail:
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required>
+
+                </div>
+
+
+                <!-- DATA DE NASCIMENTO -->
+                <div class="form-group">
+
+                    <label for="data_de_nascimento">
+                        Data de Nascimento:
+                    </label>
+
+                    <input
+                        type="date"
+                        id="data_de_nascimento"
+                        name="data_de_nascimento"
+                        required>
+
+                </div>
+
+
+                <!-- TELEFONE -->
+                <div class="form-group">
+
+                    <label for="telefone">
+                        Telefone:
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telefone"
+                        name="telefone"
+                        placeholder="(00) 00000-0000"
+                        maxlength="15"
+                        pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"
+                        required>
+
+                </div>
+
+
+                <!-- CIDADE -->
+                <div class="form-group">
+
+                    <label for="cidade">
+                        Cidade:
+                    </label>
+
+                    <select
+                        id="cidade"
+                        name="cidade"
+                        required>
+
+                        <option value="">
+                            Carregando cidades...
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- ÁREA DE INTERESSE -->
+                <div class="form-group">
+
+                    <label for="interesse">
+                        Área de Interesse:
+                    </label>
+
+                    <select
+                        id="interesse"
+                        name="interesse"
+                        required>
+
+                        <option value="">
+                            Selecione uma opção...
+                        </option>
+
+                        <option value="voluntariado">
+                            Quero ser voluntário
+                        </option>
+
+                        <option value="doacao">
+                            Quero fazer doações
+                        </option>
+
+                        <option value="parceria">
+                            Parceria Institucional
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- MENSAGEM -->
+                <div class="form-group">
+
+                    <label for="mensagem">
+                        Mensagem Adicional (Opcional):
+                    </label>
+
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="4"></textarea>
+
+                </div>
+
+
+                <!-- BOTÃO -->
+                <button
+                    type="submit"
+                    class="btn">
+
+                    Cadastrar
+
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- MODAL -->
+        <div
+            id="modalCadastro"
+            class="modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitulo">
+
+            <div class="modal-content">
+
+                <button
+                    type="button"
+                    class="fechar"
+                    aria-label="Fechar janela">
+
+                    &times;
+
+                </button>
+
+                <h2 id="modalTitulo">
+                    Cadastro realizado!
+                </h2>
+
+                <p>
+                    Usuário cadastrado com sucesso.
+                </p>
+
+                <button
+                    type="button"
+                    id="btnOk"
+                    class="btn">
+
+                    OK
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <div class="container">
+
+            <p>
+                &copy; 2026 ONG do Amor.
+                Todos os direitos reservados.
+                Feito com amor.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        /* =====================================================
+           MENU MOBILE
+        ===================================================== */
+
+        const menuToggle =
+            document.querySelector(".menu-toggle");
+
+        const navMenu =
+            document.querySelector(".nav-menu");
+
+
+        menuToggle.addEventListener("click", function () {
+
+            const aberto =
+                navMenu.classList.toggle("active");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                aberto
+            );
+
+        });
+
+
+        /* =====================================================
+           MÁSCARA DE TELEFONE
+        ===================================================== */
+
+        const telefone =
+            document.getElementById("telefone");
+
+
+        telefone.addEventListener("input", function () {
+
+            let valor =
+                this.value.replace(/\D/g, "");
+
+
+            if (valor.length > 11) {
+
+                valor =
+                    valor.substring(0, 11);
+
+            }
+
+
+            if (valor.length > 6) {
+
+                this.value =
+                    "(" +
+                    valor.substring(0, 2) +
+                    ") " +
+                    valor.substring(2, 7) +
+                    "-" +
+                    valor.substring(7, 11);
+
+            }
+
+            else if (valor.length > 2) {
+
+                this.value =
+                    "(" +
+                    valor.substring(0, 2) +
+                    ") " +
+                    valor.substring(2);
+
+            }
+
+            else if (valor.length > 0) {
+
+                this.value =
+                    "(" + valor;
+
+            }
+
+            else {
+
+                this.value = "";
+
+            }
+
+        });
+
+
+        /* =====================================================
+           CARREGAMENTO DAS CIDADES
+        ===================================================== */
+
+        const cidade =
+            document.getElementById("cidade");
+
+
+        fetch(
+            "https://brasilapi.com.br/api/ibge/municipios/v1/SP"
+        )
+
+        .then(resposta => resposta.json())
+
+        .then(cidades => {
+
+            cidade.innerHTML =
+                '<option value="">Selecione sua cidade</option>';
+
+
+            cidades
+                .sort((a, b) =>
+                    a.nome.localeCompare(b.nome)
+                )
+
+                .forEach(item => {
+
+                    const option =
+                        document.createElement("option");
+
+                    option.value =
+                        item.nome;
+
+                    option.textContent =
+                        item.nome;
+
+                    cidade.appendChild(option);
+
+                });
+
+        })
+
+        .catch(() => {
+
+            cidade.innerHTML =
+                '<option value="">Erro ao carregar cidades</option>';
+
+        });
+
+
+        /* =====================================================
+           MODAL DE CADASTRO
+        ===================================================== */
+
+        const formulario =
+            document.querySelector(".form-cadastro");
+
+        const modal =
+            document.getElementById("modalCadastro");
+
+        const fechar =
+            document.querySelector(".fechar");
+
+        const btnOk =
+            document.getElementById("btnOk");
+
+
+        formulario.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+
+                if (formulario.checkValidity()) {
+
+                    modal.style.display = "flex";
+
+                    formulario.reset();
+
+                }
+
+            }
+        );
+
+
+        fechar.addEventListener(
+            "click",
+            function () {
+
+                modal.style.display = "none";
+
+            }
+        );
+
+
+        btnOk.addEventListener(
+            "click",
+            function () {
+
+                modal.style.display = "none";
+
+            }
+        );
+
+
+        window.addEventListener(
+            "click",
+            function (event) {
+
+                if (event.target === modal) {
+
+                    modal.style.display = "none";
+
+                }
+
+            }
+        );
+
+
+        /* =====================================================
+           ALERTA DE BOAS-VINDAS
+        ===================================================== */
+
+        setTimeout(function () {
+
+            const alerta =
+                document.getElementById(
+                    "alertaBoasVindas"
+                );
+
+            alerta.style.display = "none";
+
+        }, 5000);
+
+    </script>
+
+</body>
+
+</html>
